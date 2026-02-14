@@ -25,7 +25,21 @@ items[2] = "random"
 print(items[:4])
 
 
-#6
+numbers = [1, 2, 3, 4, 5]
+
+start = int(input("enter starting index: "))
+stop = int(input("enter stop index: "))
+
+if start < 0 or start > 4 or stop < 0 or stop > 5:
+    print("incorrect index")
+else:
+    print(numbers[start:stop])
 
 
-#7
+surname = input("Enter your surname: ")
+reverse = input("Do you want your surname reversed: ")
+
+if reverse == "yes":
+    print(surname[::-1])
+else:
+    print(surname)
