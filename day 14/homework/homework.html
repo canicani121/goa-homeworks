@@ -1,0 +1,68 @@
+<!-- 
+type  → განსაზღვრავს ველის ტიპს (text, email, number, radio, password და ა.შ.)
+name  → ველის სახელი, რომელსაც სერვერზე გაგზავნის დროს იყენებენ (მაგ: name="firstname")
+id    → უნიკალური იდენტიფიკატორი, რომელიც label-ს უკავშირებს ველს
+value → ველის წინასწარი ან არჩეული მნიშვნელობა (radio, checkbox, button)
+-->
+
+
+<label for="fname">სახელი:</label>
+    <input type="text" id="fname" name="firstname"><br><br>
+
+    <label for="lname">გვარი:</label>
+    <input type="text" id="lname" name="lastname"><br><br>
+
+    <label for="email">მეილი:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="amount">თანხის რაოდენობა:</label>
+    <input type="number" id="amount" name="amount"><br><br>
+
+    <label>სქესი:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">მამრობითი</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">მდედრობითი</label><br><br>
+
+    <label for="currency">ფულის ერთეული:</label>
+    <select id="currency" name="currency">
+        <option value="" disabled selected>select currency</option>
+        <option value="lari">ლარი</option>
+        <option value="usd">დოლარი</option>
+        <option value="euro">ევრო</option>
+    </select><br><br>
+
+    <input type="submit" value="გაგზავნა">
+
+
+    <label for="q1">რა არის თქვენი საყვარელი ფერი?</label><br><br>
+
+    <input type="radio" id="red" name="color" value="red">
+    <label for="red">წითელი</label><br>
+
+    <input type="radio" id="blue" name="color" value="blue">
+    <label for="blue">ლურჯი</label><br>
+
+    <input type="radio" id="green" name="color" value="green">
+    <label for="green">მწვანე</label><br>
+
+    <input type="radio" id="yellow" name="color" value="yellow">
+    <label for="yellow">ყვითელი</label><br><br>
+
+    <input type="submit" value="გაგზავნა">
+
+
+    <label for="fname">სახელი:</label>
+    <input type="text" id="fname" name="firstname" required><br><br>
+
+    <label for="lname">გვარი:</label>
+    <input type="text" id="lname" name="lastname" required><br><br>
+
+    <label for="password">პაროლი:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="email">მეილი:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <input type="submit" value="გაგზავნა">
