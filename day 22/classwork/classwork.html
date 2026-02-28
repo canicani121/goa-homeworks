@@ -1,0 +1,54 @@
+<!-- html გამოიყენება ვებსაიტის სტრუქტურის შესაქმნელად. css გამოიყენება ვებსაიტის დიზაინისთვის.  -->
+<!-- Inline CSS არის სტილის დაწერის მეთოდი, როცა CSS პირდაპირ HTML ელემენტში, style ატრიბუტის გამოყენებით იწერება. -->
+<!-- Internal CSS არის სტილის დაწერის მეთოდი, როცა CSS იწერება იმავე HTML ფაილში, მაგრამ არა პირდაპირ ელემენტში — არამედ <style> თეგში, რომელიც ჩვეულებრივ <head> ნაწილში იწერება.  -->
+<!-- External CSS არის სტილის დაწერის მეთოდი, როცა CSS კოდი იწერება ცალკე .css ფაილში და HTML ფაილს ვუკავშირებთ <link> თეგით.  -->
+
+<h1 style="color: green;">ჩემი სათაური</h1>
+
+
+<!DOCTYPE html>
+
+<style>
+p {
+    color: blue;
+    background-color: yellow;
+}
+</style>
+
+
+<p>ეს არის ტექსტი</p>
+
+
+
+<html>
+<head>
+<title>ჩემი საიტი</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>ზღვა</h1>
+<p>ზღვა ძალიან ლამაზია და დამამშვიდებელი.</p>
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="photo">
+
+</body>
+</html>
+
+
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+}
+
+img {
+    width: 200px;
+}
